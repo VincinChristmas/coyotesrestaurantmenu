@@ -1,0 +1,283 @@
+/* Variables */
+:root {
+    --color-orange: #f18200;
+    --color-red: #dc3545;
+    --color-dark: #333;
+    --color-white: #fff;
+    --color-green: #28a745;
+    --spacing-base: 1rem;
+    --color-tan: #fcb900;
+}
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: var(--color-tan);
+}
+
+/* Menu Component */
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-base);
+}
+
+/* Section styles */
+.menu__section {
+    margin-bottom: calc(var(--spacing-base) * 3);
+}
+
+.menu__section-title {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    text-align: center;
+    padding: calc(var(--spacing-base) * 0.75);
+    margin: calc(var(--spacing-base) * -1) 0 var(--spacing-base);
+    font-weight: bold;
+    font-size: 4rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu__section-subtitle {
+    text-align: center;
+    margin: var(--spacing-base) 0;
+}
+
+.menu__section-subtitle-translation {
+    display: block;
+    color: var(--color-green);
+}
+
+/* Special section */
+.menu__special {
+    text-align: center;
+    margin: calc(var(--spacing-base) * 2) 0;
+}
+
+.menu__special-title {
+    color: var(--color-red);
+    font-weight: bold;
+    margin-bottom: var(--spacing-base);
+}
+
+.menu__special-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Images */
+.menu__images {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-base);
+    margin: calc(var(--spacing-base) * 2) 0;
+    flex-wrap: wrap;
+}
+
+.menu__image {
+    max-width: 100%;
+    width: 10rem;
+    height: auto;
+}
+
+/* Menu items */
+.menu__items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-base) * 0.75);
+    margin: calc(var(--spacing-base) * 2) 0;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: calc(var(--spacing-base) * 0.5) 0;
+    border-bottom: 1px solid #eee;
+}
+
+.menu__item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu__item-title {
+    color: var(--color-red);;
+}
+
+.menu__item-description,
+.menu__item-translation {
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+
+.menu__item-price {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+
+
+
+.menu__note {
+    text-align: center;
+    color: var(--color-red);
+    margin: var(--spacing-base) 0;
+}
+
+/* Navigation */
+.menu__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(var(--spacing-base) * 3);
+}
+
+.menu__nav-button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: calc(var(--spacing-base) * 0.5) calc(var(--spacing-base) * 1.5);
+    border-radius: 7px;
+    border: 5px solid var(--color-red);
+    transition: opacity 0.3s ease;
+}
+
+.menu__nav-button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: calc(var(--spacing-base) * 0.5);
+    }
+
+    .menu__section-title {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .menu__item {
+        flex-direction: column;
+        gap: calc(var(--spacing-base) * 0.5);
+    }
+
+    .menu__item-price {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu__section-title {
+        font-size: 1.25rem;
+    }
+
+    .menu__special-title {
+        font-size: 1.1rem;
+    }
+
+    .menu__nav {
+        flex-direction: column;
+        gap: var(--spacing-base);
+    }
+
+    .menu__nav-button {
+        text-align: center;
+    }
+
+    .menu__images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__image {
+        max-width: 80%;
+    }
+}
+
+/* Add these new styles to your existing CSS */
+
+.menu__container {
+    padding: var(--spacing-base) var(--spacing-base) calc(var(--spacing-base) * 2);
+}
+
+.menu__container--dotted {
+    background-color: var(--color-orange);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu__container--dotted::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(var(--color-white) 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.1;
+}
+
+.menu__narrow-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.menu__section--extras {
+    background-color: var(--color-orange);
+    padding: calc(var(--spacing-base) * 2) 0;
+    margin-bottom: 0;
+}
+
+.menu__section--extras .menu__section-title {
+    color: var(--color-white);
+    background: none;
+    font-weight: 500;
+    margin: 0 auto var(--spacing-base);
+}
+
+.menu__items--extras {
+    background-color: var(--color-white);
+    padding: var(--spacing-base);
+    border-radius: 8px;
+}
+
+.menu__items--extras .menu__item {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu__items--extras .menu__item:last-child {
+    border-bottom: none;
+}
+
+/* Update existing responsive styles */
+@media screen and (max-width: 768px) {
+    .menu__container {
+        padding: var(--spacing-base);
+    }
+
+    .menu__narrow-container {
+        padding: 0 var(--spacing-base);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu__section--extras {
+        padding: var(--spacing-base) 0;
+    }
+}

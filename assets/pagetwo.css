@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff6900;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main Heading */
+.main-heading {
+    text-align: center;
+    background-color: #345c00;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 5rem;
+    margin: 20px 0;
+    border: 12px dotted #ffd700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Subtitles */
+.subtitle, .subtitle-english {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.subtitle {
+    color: #000;
+    font-weight: 700;
+}
+
+.subtitle-english {
+    color: #ffd700;
+    margin-top: -0.2px;
+    font-weight: 700;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.menu-items {
+    flex: 2;
+}
+
+.menu-images {
+    flex: 1;
+}
+
+/* Menu Items */
+.menu-item {
+    margin-bottom: 20px;
+  
+}
+
+.item-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.price {
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+
+.price-options {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.option {
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+.item-description {
+    color: #ffd700;
+    font-size: 0.9em;
+    margin: 1px 0;
+}
+
+/* Images */
+.menu-images figure {
+    margin: 0 0 60px 0;
+    text-align: center;
+}
+
+.menu-images img {
+    width: 139px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu-images figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav-button {
+    background-color: #ffd700;
+    color: #345c00;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 5px solid #345c00;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .menu-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-images {
+        grid-template-columns: 1fr;
+    }
+} 

@@ -317,7 +317,41 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .menu-container {
+        padding: 15px;
+    }
+
+    .tacos-header h1 {
+        font-size: 3rem;
+    }
+
+    .antojitos-header h2 {
+        font-size: 3rem;
+    }
+
+    .item-name, .item-price {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .burger-image {
+        width: 160px;
+    }
+}
+
 @media (max-width: 768px) {
+    .menu-container {
+        padding: 10px;
+    }
+
     .tacos-header h1 {
         font-size: 2.5rem;
     }
@@ -328,10 +362,20 @@ body {
 
     .taco-columns, .antojitos-columns, .triplets-section {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .taco-column p, .antojitos-column p {
+        font-size: 1rem;
+    }
+
+    .item-name, .item-price {
+        font-size: 1.6rem;
     }
 
     .extra-ingredients {
         flex-direction: column;
+        padding: 10px 15px;
     }
 
     .extra-content {
@@ -339,20 +383,57 @@ body {
         padding-top: 10px;
     }
 
+    .extra-title p:first-child {
+        font-size: 1.5rem;
+    }
+
+    .extra-title p:last-child {
+        font-size: 1.4rem;
+    }
+
     .burritos-section {
         flex-direction: column;
     }
 
+    .burritos-header {
+        font-size: 1.8rem;
+    }
+
     .burritos-price {
-        text-align: center;
+        padding: 20px;
+    }
+
+    .burritos-price p {
+        font-size: 2rem;
+    }
+
+    .burrito-names p, .burrito-prices p {
+        font-size: 1rem;
     }
 
     .burger-image {
         width: 150px;
     }
+
+    .title {
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .description, .description-english {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
+    .menu-container {
+        padding: 8px;
+    }
+
     .tacos-header h1 {
         font-size: 2rem;
     }
@@ -361,15 +442,48 @@ body {
         font-size: 2rem;
     }
 
-    .title {
+    .price-image {
+        width: 80px;
+    }
+
+    .item-name, .item-price {
         font-size: 1.4rem;
     }
 
-    .subtitle {
+    .title {
         font-size: 1.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
     }
 
     .burger-image {
         width: 120px;
+    }
+
+    .extra-title p:first-child {
+        font-size: 1.3rem;
+    }
+
+    .extra-title p:last-child {
+        font-size: 1.2rem;
+    }
+
+    .burritos-header {
+        font-size: 1.5rem;
+    }
+
+    .burritos-price p {
+        font-size: 1.8rem;
+    }
+
+    .burrito-names p, .burrito-prices p {
+        font-size: 0.9rem;
+    }
+
+    .nav-button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
     }
 } 

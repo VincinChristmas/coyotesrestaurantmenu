@@ -160,22 +160,26 @@ body {
     justify-content: space-between;
     gap: 20px;
     margin: 20px 0;
+    flex-wrap: nowrap;
 }
 
 .quesadillas-left {
     flex: 1;
+    min-width: 200px;
 }
 
 .quesadillas-center {
     flex: 2;
     text-align: center;
+    min-width: 182px;
 }
 
 .quesadillas-right {
     flex: 1;
     text-align: right;
-    color:#cf2e2e;
+    color: #cf2e2e;
     font-size: 1.3rem;
+    min-width: 100px;
 }
 
 .burger-image {
@@ -322,18 +326,17 @@ body {
         font-size: 2.5rem;
     }
 
-    .taco-columns, .antojitos-columns, .triplets-section, .quesadillas-section {
+    .taco-columns, .antojitos-columns, .triplets-section {
         flex-direction: column;
     }
 
     .extra-ingredients {
         flex-direction: column;
-        text-align: center;
     }
 
     .extra-content {
         padding-left: 0;
-        margin-top: 20px;
+        padding-top: 10px;
     }
 
     .burritos-section {
@@ -341,7 +344,7 @@ body {
     }
 
     .burritos-price {
-        margin-top: 20px;
+        text-align: center;
     }
 
     .burger-image {

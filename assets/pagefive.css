@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'DM Sans', Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
     color: #333;
     max-width: 1200px;
@@ -73,10 +73,17 @@ body {
     margin-bottom: 0;
 }
 
-.text-center {
+.text__fruit-center {
     text-align: center;
     font-weight: 600;
     color: #000;
+}
+
+.text-center {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #cf2e2e;
 }
 
 .column p {
@@ -123,7 +130,7 @@ body {
     padding: 15px;
     border-radius: 50px;
     margin: 30px 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .weekend-box {
